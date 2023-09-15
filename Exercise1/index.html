@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+  <p>
+    Exercise #1
+Objective: Understand the Observer design pattern.
+
+Instructions:
+
+Add methods to the Subject class to addObserver, removeObserver, and notifyObservers.
+When notifyObservers is called on a Subject instance, each observer's update method should be invoked.
+Instantiate the Subject and add multiple observers. Afterward, call notifyObservers and ensure each observer gets updated.
+Starting Code:
+
+class Subject {
+	constructor() {
+		this.observers = [];
+	}
+	// Add methods here
+}
+
+class Observer {
+	update() {
+		console.log('Observer updated!');
+	}
+}
+Exercise #2
+  </p>
+    
+</body>
+</html>
