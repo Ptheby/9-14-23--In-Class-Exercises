@@ -23,6 +23,7 @@ class Observer {
 		console.log('Observer updated!');
 	}
 }
+
 const subject = new Subject(); 
  //instantiate our object---created an object
 //create new object based on Subject class
@@ -49,6 +50,15 @@ subject.removeObserver(observer2);
 subject.removeObserver(observer3);
 
 subject.notifyObservers();
+subject.notifyObservers();
+
+const observer8= new Observer() //create another observer called observer8
+
+subject.addObserver(observer8); //add the new observer and one that i removed before
+subject.addObserver(observer1);
+
+subject.notifyObservers(); //notify the observers of the subjects change of state
+
 
 
 
